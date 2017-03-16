@@ -1,26 +1,30 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "This is a sample server Petstore server.  You can find out more about Swagger at <a href=\"http://swagger.io\">http://swagger.io</a> or on irc.freenode.net, #swagger.  For this sample, you can use the api key \"special-key\" to test the authorization filters",
+    "description": "Simple example of swagger documentation of our Mobile SI integration API",
     "version": "1.0.0",
     "title": "Best Buy Mobile Integration API",
     "termsOfService": "http://www.bestbuycanada.ca",
     "contact": {
-      "url": "http://swagger.io",
-      "name": "Your pals at Swagger",
-      "email": "apiteam@swagger.io"
+      "url": "http://bestbuycanada.ca",
+      "name": "Best Buy Canada",
+      "email": "development@bestbuycanada"
     },
     "license": {
       "name": "Apache 2.0",
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
-  "host": "petstore.swagger.io",
-  "basePath": "/v2",
+  "host": "msi.bbycastatic.ca",
+  "basePath": "/mobile-si/si",
   "schemes": [
-    "http"
+    "https"
   ],
   "tags": [
+    {
+      "name": "category",
+      "description": "Operations about category"
+    },
     {
       "name": "user",
       "description": "Operations about user"
