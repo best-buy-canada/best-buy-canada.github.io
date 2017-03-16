@@ -1,29 +1,26 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Simple example of swagger documentation of our Mobile SI integration API",
+    "description": "This is a sample server Petstore server.  You can find out more about Swagger at <a href=\"http://swagger.io\">http://swagger.io</a> or on irc.freenode.net, #swagger.  For this sample, you can use the api key \"special-key\" to test the authorization filters",
+    "version": "1.0.0",
     "title": "Best Buy Mobile Integration API",
     "termsOfService": "http://www.bestbuycanada.ca",
     "contact": {
-      "url": "http://bestbuycanada.ca",
-      "name": "Your pals at Best Buy Canada",
-      "email": "development@bestbuycanada"
+      "url": "http://swagger.io",
+      "name": "Your pals at Swagger",
+      "email": "apiteam@swagger.io"
     },
     "license": {
       "name": "Apache 2.0",
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
-  "host": "msi.bbycastatic.ca",
-  "basePath": "/mobile-si/si",
+  "host": "petstore.swagger.io",
+  "basePath": "/v2",
   "schemes": [
-    "https"
+    "http"
   ],
   "tags": [
-    {
-      "name": "category",
-      "description": "Operations about categories"
-    },
     {
       "name": "user",
       "description": "Operations about user"
@@ -46,50 +43,6 @@
     }
   ],
   "paths": {
-    "/catalog": {
-      "get": {
-        "tags": [
-          "category"
-        ],
-        "summary": "Returns live product category hierarchy and IDs",
-        "description": "Returns live product category hierarchy and IDs",
-        "operationId": "operationId",
-        "produces": [
-          "application/json",
-        ],
-        "parameters": [
-          {
-            "in": "query",
-            "name": "lang",
-            "description": "Language to retrieve",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation",
-            "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/Pet"
-              }
-            }
-          },
-          "400": {
-            "description": "Invalid status value"
-          }
-        },
-        "security": [
-          {
-            "petstore_auth": [
-              "write:pets",
-              "read:pets"
-            ]
-          }
-        ]
-      } 
-    }
     "/pet": {
       "post": {
         "tags": [
