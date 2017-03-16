@@ -23,7 +23,7 @@
   "tags": [
     {
       "name": "category",
-      "description": "Operations about category"
+      "description": "Category Operations"
     },
     {
       "name": "user",
@@ -47,6 +47,24 @@
     }
   ],
   "paths": {
+    "/catalog": {
+      "get": {
+        "tags": [
+          "category"
+        ],
+        "summary": "Returns live product category hierarchy and IDs",
+        "description": "",
+        "operationId": "",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
     "/pet": {
       "post": {
         "tags": [
