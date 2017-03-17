@@ -60,11 +60,14 @@
         ],
         "parameters": [
           {
-            "in": "query",
             "name": "lang",
+            "in": "query",
             "description": "The language for the categories",
             "required": false,
-            "type": "string"
+            "type": "string",
+            "allowEmptyValue": false,
+            "default": "en",
+            "enum": ["en","fr"]
           }
         ],
         "responses": {
