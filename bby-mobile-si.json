@@ -22,12 +22,16 @@
   ],
   "tags": [
     {
+      "name": "search",
+      "description": "Search Operations"
+    },
+    {
       "name": "category",
       "description": "Category Operations"
     },
     {
-      "name": "search",
-      "description": "Search Operations"
+      "name": "product",
+      "description": "Product Operations"
     },
     {
       "name": "user",
@@ -188,6 +192,42 @@
             "type": "string",
             "allowEmptyValue": true,
             "enum": ["iosapp"]
+          },
+          {
+            "name": "lang",
+            "in": "query",
+            "description": "The language for the categories",
+            "required": false,
+            "type": "string",
+            "allowEmptyValue": false,
+            "default": "en",
+            "enum": ["en","fr"]
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
+    "/v4/pdp/overview/": {
+      "get": {
+        "tags": [
+          "product"
+        ],
+        "summary": "Product Detail",
+        "description": "Expects 8-digit product ID, returns detailed product information",
+        "operationId": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productID",
+            "in": "path",
+            "description": "Id of product to retrieve details for",
+            "required": false
           },
           {
             "name": "lang",
