@@ -34,6 +34,10 @@
       "description": "Product Operations"
     },
     {
+      "name": "reviews",
+      "description": "Review Operations"
+    },
+    {
       "name": "user",
       "description": "Operations about user"
     },
@@ -227,6 +231,43 @@
             "in": "path",
             "name": "productID",
             "description": "Id of product to retrieve details for",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "lang",
+            "in": "query",
+            "description": "The language for the categories",
+            "required": false,
+            "type": "string",
+            "allowEmptyValue": false,
+            "default": "en",
+            "enum": ["en","fr"]
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
+    "/pdp/reviewDetails/{productID}": {
+      "get": {
+        "tags": [
+          "review"
+        ],
+        "summary": "Product Reviews",
+        "description": "Returns Canadian and US product reviews",
+        "operationId": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "productID",
+            "description": "Id of product to retrieve reviews for",
             "required": true,
             "type": "string"
           },
