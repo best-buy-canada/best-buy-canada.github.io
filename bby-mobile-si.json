@@ -119,6 +119,94 @@
         }
       }
     },
+    "/v3/products/search": {
+      "get": {
+        "tags": [
+          "search"
+        ],
+        "summary": "Search Results",
+        "description": "Returns search results based on query",
+        "operationId": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "Search query",
+            "required": false,
+            "type": "string",
+            "allowEmptyValue": true
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Result page to request",
+            "required": false,
+            "type": "integer",
+            "allowEmptyValue": true
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "description": "How to sort results",
+            "required": false,
+            "type": "string",
+            "allowEmptyValue": true,
+            "enum": ["relevance desc"]
+          },
+          {
+            "name": "storeId",
+            "in": "query",
+            "description": "[check with mobile team] Store IDs to show results for",
+            "required": false,
+            "type": "string",
+            "allowEmptyValue": true
+          },
+          {
+            "name": "zipCode",
+            "in": "query",
+            "description": "[check with mobile team] zipCode to show results for",
+            "required": false,
+            "type": "string",
+            "allowEmptyValue": true
+          },
+          {
+            "name": "facetsOnly",
+            "in": "query",
+            "description": "Show only facets as results or not",
+            "required": false,
+            "type": "boolean",
+            "allowEmptyValue": true
+          },
+          {
+            "name": "platform",
+            "in": "query",
+            "description": "[check with mobile team] Platform to format results for",
+            "required": false,
+            "type": "string",
+            "allowEmptyValue": true,
+            "enum": ["iosapp"]
+          },
+          {
+            "name": "lang",
+            "in": "query",
+            "description": "The language for the categories",
+            "required": false,
+            "type": "string",
+            "allowEmptyValue": false,
+            "default": "en",
+            "enum": ["en","fr"]
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
     "/pet": {
       "post": {
         "tags": [
