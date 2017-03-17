@@ -102,6 +102,14 @@
             "allowEmptyValue": false,
             "default": "en",
             "enum": ["en","fr"]
+          },
+          {
+            "name": "query",
+            "in": "query",
+            "description": "Search keywords",
+            "required": false,
+            "type": "string",
+            "allowEmptyValue": true
           }
         ],
         "responses": {
