@@ -227,7 +227,8 @@
             "name": "productID",
             "in": "path",
             "description": "Id of product to retrieve details for",
-            "required": false
+            "required": false,
+            "type": "string"
           },
           {
             "name": "lang",
