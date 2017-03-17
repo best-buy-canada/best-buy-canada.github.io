@@ -211,7 +211,7 @@
         }
       }
     },
-    "/v4/pdp/overview/": {
+    "/v4/pdp/overview/{productID}": {
       "get": {
         "tags": [
           "product"
