@@ -58,6 +58,15 @@
         "produces": [
           "application/json"
         ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "lang",
+            "description": "The language for the categories",
+            "required": false,
+            "type": "string"
+          }
+        ],
         "responses": {
           "default": {
             "description": "successful operation"
