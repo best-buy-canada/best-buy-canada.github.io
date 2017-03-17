@@ -26,6 +26,10 @@
       "description": "Category Operations"
     },
     {
+      "name": "search",
+      "description": "Search Operations"
+    },
+    {
       "name": "user",
       "description": "Operations about user"
     },
@@ -52,8 +56,8 @@
         "tags": [
           "category"
         ],
-        "summary": "Returns live product category hierarchy and IDs",
-        "description": "",
+        "summary": "Category Tree",
+        "description": "Returns live product category hierarchy and IDs",
         "operationId": "",
         "produces": [
           "application/json"
@@ -71,7 +75,37 @@
           }
         ],
         "responses": {
-          "default": {
+          "200": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
+    "/search/suggest/www": {
+      "get": {
+        "tags": [
+          "search"
+        ],
+        "summary": "Search Autocomplete",
+        "description": "Returns search suggestions based on provided string",
+        "operationId": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "query",
+            "description": "The language for the categories",
+            "required": false,
+            "type": "string",
+            "allowEmptyValue": false,
+            "default": "en",
+            "enum": ["en","fr"]
+          }
+        ],
+        "responses": {
+          "200": {
             "description": "successful operation"
           }
         }
