@@ -255,7 +255,7 @@
     "/pdp/reviewDetails/{productID}": {
       "get": {
         "tags": [
-          "review"
+          "reviews"
         ],
         "summary": "Product Reviews",
         "description": "Returns Canadian and US product reviews",
