@@ -29,10 +29,7 @@
 .swagger-section #header #logo .logo__title {
     font-weight: 100;
     padding: 7px 0 0 15px;
-    font-size: 0.9em
-}
-
-#header {
     padding-top: 16px;
     padding-bottom: 25px;
+    font-size: 0.9em
 }
