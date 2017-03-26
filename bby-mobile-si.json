@@ -4,9 +4,9 @@
     "description": "Simple example of swagger documentation of our Mobile SI integration API",
     "version": "1.0.0",
     "title": "Best Buy Mobile Integration API",
-    "termsOfService": "http://www.bestbuycanada.ca",
+    "termsOfService": "http://www.bestbuy.ca",
     "contact": {
-      "url": "http://bestbuycanada.ca",
+      "url": "http://bestbuy.ca",
       "name": "Best Buy Canada",
       "email": "development@bestbuycanada"
     },
