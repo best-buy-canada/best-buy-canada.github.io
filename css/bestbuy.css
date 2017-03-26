@@ -1,0 +1,9 @@
+.logo {
+    display: block;
+    float: left;
+    margin: 0;
+}
+
+.swagger-section #header {
+    background-color: #003b64;
+}
