@@ -1,3 +1,7 @@
+* {
+    font-family: 'Avenir Next for Best Buy', 'Open Sans', 'Roboto', 'Arial';
+}
+
 .logo {
     display: block;
     float: left;
@@ -6,6 +10,7 @@
 
 .swagger-section #header {
     background-color: #003b64;
+    padding: 16px 14px 25px 2px;
 }
 
 #input_baseUrl, .swagger-section #explore {
@@ -28,3 +33,4 @@
     padding: 7px 0 0 15px;
     font-size: 0.9em
 }
+
