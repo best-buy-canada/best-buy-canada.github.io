@@ -28,3 +28,8 @@
     padding: 7px 0 0 15px;
     font-size: 0.9em
 }
+
+#header {
+    padding-top: 16px;
+    padding-bottom: 25px;
+}
