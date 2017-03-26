@@ -27,3 +27,7 @@
 .swagger-section #explore:hover {
     background-color: #bfbfbf;
 }
+
+.logo__title {
+    font-weight: 100;
+}
