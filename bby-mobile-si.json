@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Simple example of swagger documentation of our Mobile SI integration API",
+    "description": "Best Buy Canada Public API Documentation",
     "version": "1.0.0",
     "title": "Best Buy Canada Public APIs",
     "termsOfService": "http://www.bestbuy.ca",
