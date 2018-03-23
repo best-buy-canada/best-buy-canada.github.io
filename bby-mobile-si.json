@@ -15,7 +15,7 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
-  "host": "msi.bbycastatic.ca",
+  "host": "bizhacks.bbycastatic.ca",
   "basePath": "/mobile-si/si",
   "schemes": [
     "https"
